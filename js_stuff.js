@@ -57,4 +57,11 @@ _.times(squaresColumn, function(n) {
       d3.selectAll('.square').attr('fill', 'white');
     });
 
-});
+    d3.select('#start').on('click', function (d, i) {
+      
+      d3.selectAll(".square[fill='#5B2C6F']").attr('fill', 'black')
+
+
+    });
+    
+  });
